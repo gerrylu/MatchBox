@@ -1,0 +1,412 @@
+/*Start of sprite*/
+.sprite {background:url(../img/img-all.png);}
+
+.sprite-InCall{ background-position: 0 0; width: 32px; height: 32px; } 
+.sprite-MissedCall{ background-position: 0 -82px; width: 32px; height: 32px; } 
+.sprite-OutCall{ background-position: 0 -164px; width: 32px; height: 32px; } 
+.sprite-ReceiverContact{ background-position: 0 -246px; width: 48px; height: 48px; } 
+.sprite-SenderContact{ background-position: 0 -344px; width: 48px; height: 48px; } 
+.sprite-add-item{ background-position: 0 -442px; width: 16px; height: 16px; } 
+.sprite-app-menu-sel{ background-position: 0 -508px; width: 32px; height: 32px; } 
+.sprite-app-menu{ background-position: 0 -590px; width: 32px; height: 32px; } 
+.sprite-backup-menu-sel{ background-position: 0 -672px; width: 32px; height: 32px; } 
+.sprite-backup-menu{ background-position: 0 -754px; width: 32px; height: 32px; } 
+.sprite-call-menu-sel{ background-position: 0 -836px; width: 32px; height: 32px; } 
+.sprite-call-menu{ background-position: 0 -918px; width: 32px; height: 32px; } 
+.sprite-cn{ background-position: 0 -1000px; width: 14px; height: 14px; } 
+.sprite-contact-menu-sel{ background-position: 0 -1064px; width: 32px; height: 32px; } 
+.sprite-contact-menu{ background-position: 0 -1146px; width: 32px; height: 32px; } 
+.sprite-contact{ background-position: 0 -1228px; width: 48px; height: 48px; } 
+.sprite-delete-image{ background-position: 0 -1326px; width: 32px; height: 32px; } 
+.sprite-delete-item{ background-position: 0 -1408px; width: 16px; height: 16px; } 
+.sprite-delete{ background-position: 0 -1474px; width: 16px; height: 16px; } 
+.sprite-doc{ background-position: 0 -1540px; width: 64px; height: 64px; } 
+.sprite-file-menu-sel{ background-position: 0 -1654px; width: 32px; height: 32px; } 
+.sprite-file-menu{ background-position: 0 -1736px; width: 32px; height: 32px; } 
+.sprite-folder{ background-position: 0 -1818px; width: 64px; height: 64px; } 
+.sprite-logo{ background-position: 0 -1932px; width: 48px; height: 48px; } 
+.sprite-music{ background-position: -114px 0; width: 64px; height: 64px; } 
+.sprite-option-menu-sel{ background-position: -114px -114px; width: 32px; height: 32px; } 
+.sprite-option-menu{ background-position: -114px -196px; width: 32px; height: 32px; } 
+.sprite-other-file{ background-position: -114px -278px; width: 64px; height: 64px; } 
+.sprite-photo-menu-sel{ background-position: -114px -392px; width: 32px; height: 32px; } 
+.sprite-photo-menu{ background-position: -114px -474px; width: 32px; height: 32px; } 
+.sprite-photo{ background-position: -114px -556px; width: 64px; height: 64px; } 
+.sprite-sms-thread-menu-sel{ background-position: -114px -670px; width: 32px; height: 32px; } 
+.sprite-sms-thread-menu{ background-position: -114px -752px; width: 32px; height: 32px; } 
+.sprite-sys-info-menu-sel{ background-position: -114px -834px; width: 32px; height: 32px; } 
+.sprite-sys-info-menu{ background-position: -114px -916px; width: 32px; height: 32px; } 
+.sprite-us{ background-position: -114px -998px; width: 14px; height: 14px; } 
+.sprite-video{ background-position: -114px -1062px; width: 64px; height: 64px; } 
+
+
+.aHasBk{display: inline-block;}
+/*End of sprite*/
+
+
+/* - - - - - - - - - 全局样式  - - - - - - - - -*/
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,
+a,abbr,address,code,
+del,em,img,dl,dt,dd,ol,ul,li,
+fieldset,form,label{
+margin:0;padding:0;border:0;
+font-style:inherit;font-family:inherit;vertical-align:baseline;}
+img{border:none;}
+
+body{font-size:13px;color:#bdbdbd;font-family:黑体}
+ul,ol{list-style-type:none;}
+a{color:#bdbdbd;text-decoration:none;}
+
+
+/*链接样式*/
+a:link{}	
+a:hover{text-decoration:underline;}	/*设置对象在其鼠标悬停时的样式表属性*/
+a:active{}  /*在鼠标点击与释放之间发生的事件*/
+a:visited{} /* 已被访问过时的样式表属性 */
+/*  - - - - - - - - - 类别样式  - - - - - - - - -*/
+.clear{height:0;line-height:0;font-size:0;clear:both;overflow:hidden;display:block;}
+.f_left{float:left;}
+.f_right{float:right;}
+
+
+#frame-div{background-color:#1D262C;margin:0px auto;width:1100px;height:650px;}
+#head-div {width:160px;height:580px;overflow:hidden;margin-top:20px;margin-left:25px;margin-right:0px;float:left;}
+#main-div {width:900px;height:610px;;background-color:#F1F1F1;overflow:hidden;margin-top:20px;margin-left:0px;float:left;-webkit-border-radius:8px;-moz-border-radius: 8px;border-radius: 8px;}
+.content-div {width:800px;height:590px;margin:10px 40px;border:1px;color:black;}
+.EnableDebug{margin-top:60px;}
+
+/* 主菜单 */
+.main-menu {}
+.main-menu li {margin:0px;margin-bottom:2px;}
+.main-menu li a {background-repeat:no-repeat;display:block;width:160px;height:60px;line-height:60px;text-align:left;font-size:20px;font-weight:bold;-webkit-border-radius:8px;-moz-border-radius: 8px;border-radius: 8px;}
+.main-menu li a span{margin-left:10px;}
+.main-menu li a.current, .main-menu li a:hover {background-color: #F1F1F1;text-decoration:none;color:#252E33;}
+
+/* 短信列表循环 */
+dl.listsys {bottom;height:55px;margin:0 13px 0 13px;}
+dl.listThread { bottom;height:55px;margin:0 13px 0 13px;}
+dl.listThread dt {width:93px;float:right;padding-top:20px;}
+dl.listThread dd {padding:0 0 0 10px;color:black;width:750px;}
+p.title {line-height:30px;}
+p.title span {font-weight:bold;padding-right:10px;font-size:14px;}
+p.title em {font-size:12px;font-style: normal}
+p a {color:#5151A2;}
+/* 对话,留言,关闭按钮 */
+dt.f_right a {margin-left:7px;}
+dt.f_right a:hover, .page a, p.sub-menu a:hover {text-decoration:none;}
+
+/* 分页 */
+.page {width:628px;margin:4px;text-align:center;margin-top:0px;height:45px;}
+ ul.pages {display:block;border:none;text-transform:uppercase;font-size:10px;margin-left:10px;padding:0;}
+ ul.pages li {list-style:none;float:left;border:1px solid #AE57A4;text-decoration:none;margin-top:5px;padding:5px;}
+ ul.pages li:hover {border:1px solid green;background-color:green;color:white}
+ ul.pages li.pgEmpty {border:1px solid #BEBEBE;color:#BEBEBE;}
+ ul.pages li.pgCurrent {border:1px solid green;background-color:green;color:white}
+
+.call-table {border:0px;color:black;}
+.call-row {height:50px;}
+.call-c1 {width:35px;}
+.call-c2 {width:100px;}
+.call-c3 {width:100px;}
+.call-c4 {width:265px;}
+.call-c5 {width:150px;}
+.call-c6 {width:50px;}
+
+.file-box {height:470px;color:#fff;}
+.call-box {height:500px;color:#FFF;font-size:14px;margin-top:20px;}
+.chat-box {width:790px;height:400px;color:black;margin:5px;background-color:#FAF9F7;border:1px solid #33b5e5;}
+.main-box {height:490px;color:black;}
+.sys-box {height:490px;color:#fff;}
+.contact-sel-box {height:300px;}
+
+/* 短信列表 */
+/*.sms_contact_area{width:790px;margin:5px;height:50px;background-color:#33b5e5;}*/
+#CHAT-CONTACT-LABEL {float:left;width:60px;}
+.selected-contact-area {width:735px;height:50px;background-color:#33b5e5;float:left;}
+
+.chatlist {color:black;margin:10px}
+.chatlist p {font-size:14px;}
+
+/* 来信者头像 */
+.Sender {display:block;}
+/* 回复者头像 */
+.Receiver {display:block;}
+
+/* 来信者楼 */
+/* 名字，时间的背景 */
+.send-content .t_top {background-color:#F2F5A9;width:453px;height:25px;line-height:25px;padding-top:5px;}
+.send-content .t_top .both {font-weight:bold;padding:5px 10px 0 30px;}
+/* 短信内容 */
+.send-content .t_bottom {background-color:#F2F5A9;width:393px;padding:0 30px 20px 30px;}
+.send-content {position:relative;width:520px;margin-right:20px;_margin-right:10px;}
+
+
+/* 第二楼(回复者楼) */
+/* 短信回复内容 */
+.recv-content {margin-left:85px;_margin-left:43px;}
+.recv-content .t_top {line-height:30px;background-color:#F2F5A9;;width:453px;height:30px;}
+/* 时间 */
+.recv-content em {margin-left:30px;}
+/* 短信内容 */
+.recv-content .t_bottom {padding-left:30px;background-color:#F2F5A9;;width:423px;padding-bottom:20px;}
+
+
+/* 发送内容区 */
+/*.SendSmsBox {height:60px;}*/
+#SEND-SMS-BTN{margin-top:15px;}
+.SmsEditor {width:630px;height:50px;margin:5px;line-height:20px;color:black;float:left;margin-right:10px;}
+
+
+#CONTACTS-SEL-DLG {width:520px;height:500px;color:black;}
+.contacts-list {width:250px;height:340px;margin:2px;background-color:#F1F1F1;;float:left;}
+.selected-contact-list {float:right;}
+.contact-title {display:inline-block;line-height:40px;width:100%;height:40px;text-align:center;font-size:16px;font-weight:bold;background-color:#97CBFF;}
+.contact-input-div {background-color:#F1F1F1;padding-top:5px;}
+.contact-input{line-height:30px;width:420px;height:30px;margin-left:5px;margin-bottom:2px;border:1px solid;}
+
+.contact_card {margin:5px;color:black;width:auto;display:inline;}
+.contact_item{margin:5px;width:95%;height:25px;line-height:25px;;font-size:14px;}
+.contact_item :hover  {background-color:#FFE153;color:black;}
+
+#INPUT-CONTACT-NO {;background-color:#F1F1F1;}
+#BTN_CONTACT_INPUT_ENTER {display:inline-block;color:white;text-decoration: none;text-align: center;background-color:#33b5e5;margin-bottom:10px;margin-left:10px;width:40px;height:30px;line-height:30px;;font-size:14px;}
+#BTN_SELECT_CONTACT {margin-top:10px;margin-left:30px;float:left;}
+
+.divLine {height:1px;width:100%;background-color:#FF8040;line-height:1px;clear:both;display:block;overflow:hidden;margin:3px;}
+
+/* 文件管理图标处 */
+.filelist {margin:0 15px 40px 28px;_margin:0 26px 40px 15px;float:left;text-align:center;width:81px;height:81px;}
+/*.filelist:hover {background:url(../images/bg06.png) no-repeat;}*/
+.filelist a {color:black;font-size:14px;}
+.filelist dt {height:55px;margin-top:5px;}
+.filelist dd {color:black;}
+
+
+/*联系人图标*/
+.contactlist {color:black;font-size:14px;margin:0 15px 40px 28px;_margin:0 26px 40px 15px;float:left;text-align:center;width:120px;height:100px;}
+.contactlist a {color:black;font-size:14px;}
+.contactlist dt {height:55px;margin-top:5px;}
+.contactlist dd {}
+
+.contact-item-box{color: #222;margin: 12px 0 0;}
+#CONTACT-DETAIL-DIV{width:370px; overflow:hiden;}
+
+.sys-item {border:1px solid #FF8040;width: 290px;height:160px;float:left;margin:5px 15px;padding:10px;font-size: 15px;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;}
+.sys-graph {width: 290px;height:110px;}
+.sys-text-item { margin-top: 50px; margin-left: 45px; width:240px;height:60px;text-align: left;vertical-align:middle;}
+.sys-title{color:green;font-weight: bold;margin-right:10px;}
+
+.backup-option {border:1px solid #33b5e5;width: 290px;height:260px;float:left;margin:5px 15px;padding:10px;font-size: 15px;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;}
+
+
+#UP-DROP-AREA {height: 200px; width: 300px; border: 1px solid #33b5e5;background-color: #F7F2E0;}
+#CREATE-FILE-DIV {color: black;width:300px;}
+#RENAME-FILE-DIV  {color: black;width:300px;}
+#ABOUT-DIV {height: 200px; width: 300px; border: 1px solid #33b5e5;text-align:center;color: #33b5e5;font-size:20px;}
+
+#AlertContent{color: black;width:300px;height:100px;font-size:20px;text-align:center;}
+
+
+/* 文件管理地址处 */
+.FolderPathArea {height:35px;line-height:25px;margin:5px;color:#fefefe;font-size:14px;padding-left:20px;}
+
+.pathItem {
+height:30px;
+line-height: 30px;
+vertical-align: bottom;
+margin-right: 5px;
+display: inline-block;
+text-align: center;
+color:black;
+font-size: 15px;
+font-weight: bold;
+line-height: 27px;
+background-color:#FFFAF4;
+border:1px solid #33b5e5;
+}
+.pathItem:hover {
+color:black;
+text-decoration: none;
+background-color:#FFE4CA;
+-webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+-moz-box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+}
+
+.path-current {
+background-color:#FFE4CA;
+}
+
+.margin-zero {margin:0px}
+
+.tabItem {
+width:80px;
+height:60px;
+line-height: 60px;
+vertical-align: bottom;
+margin-right: 5px;
+display: inline-block;
+text-align: center;
+color:white;
+font-size: 15px;
+font-weight: bold;
+line-height: 27px;
+background-color: #5FB404;
+-webkit-border-radius: 2px;
+-moz-border-radius: 2px;
+border-radius: 2px;
+}
+.tabItem:hover {
+/*border: 1px solid #c6c6c6;*/
+color:white;
+text-decoration: none;
+background-color:green;
+-webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+-moz-box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+}
+
+.tab-current {
+background-color:green;
+}
+
+.sub-menu-button {
+height: 30px;
+line-height: 29px;
+vertical-align: bottom;
+margin: 0;
+display: inline-block;
+width:auto;
+text-align: center;
+color:white;
+font-size: 15px;
+font-weight: bold;
+padding: 0 8px;
+line-height: 27px;
+-webkit-border-radius: 2px;
+-moz-border-radius: 2px;
+border-radius: 2px;
+background-color: #5FB404;
+}
+.sub-menu-button:hover {
+/*border: 1px solid #c6c6c6;*/
+color:white;
+text-decoration: none;
+background-color:green;
+-webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+-moz-box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+}
+
+.button-transition {-webkit-transition: all 0.5s;-moz-transition: all 0.5s;-ms-transition: all 0.5s;-o-transition: all 0.5s;transition: all 0.5s;}
+.g-button {
+height: 29px;
+line-height: 29px;
+vertical-align: bottom;
+margin: 0;
+display: inline-block;
+width:auto;
+text-align: center;
+color:white;
+font-size: 11px;
+font-weight: bold;
+padding: 0 8px;
+line-height: 27px;
+-webkit-border-radius: 2px;
+-moz-border-radius: 2px;
+border-radius: 2px;
+background-color: #5FB404;
+}
+.g-button:hover {
+/*border: 1px solid #c6c6c6;*/
+color:white;
+text-decoration: none;
+background-color:green;
+-webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+-moz-box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+}
+
+
+/*colorbox.css*/
+/*
+    ColorBox Core Style:
+    The following CSS is consistent between example themes and should not be altered.
+*/
+#colorbox, #cboxOverlay, #cboxWrapper{position:absolute; top:0; left:0; z-index:9999; overflow:hidden;}
+#cboxOverlay{position:fixed; width:100%; height:100%;}
+#cboxMiddleLeft, #cboxBottomLeft{clear:left;}
+#cboxContent{position:relative;}
+#cboxLoadedContent{overflow:auto;}
+#cboxTitle{margin:0;}
+#cboxLoadingOverlay, #cboxLoadingGraphic{position:absolute; top:0; left:0; width:100%; height:100%;}
+#cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow{cursor:pointer;}
+.cboxPhoto{float:left; margin:auto; border:0; display:block; max-width:none;}
+.cboxIframe{width:100%; height:100%; display:block; border:0;}
+#colorbox, #cboxContent, #cboxLoadedContent{box-sizing:content-box;}
+
+/* 
+    User Style:
+    Change the following styles to modify the appearance of ColorBox.  They are
+    ordered & tabbed in a way that represents the nesting of the generated HTML.
+*/
+#cboxOverlay{background:url(../images/overlay.png) repeat 0 0;}
+#colorbox{}
+    *#cboxTopLeft{width:21px; height:21px; background:url(../images/controls.png) no-repeat -101px 0;}
+    #cboxTopRight{width:21px; height:21px; background:url(../images/controls.png) no-repeat -130px 0;}
+    #cboxBottomLeft{width:21px; height:21px; background:url(../images/controls.png) no-repeat -101px -29px;}
+    #cboxBottomRight{width:21px; height:21px; background:url(../images/controls.png) no-repeat -130px -29px;}
+    #cboxMiddleLeft{width:21px; background:url(../images/controls.png) left top repeat-y;}
+    #cboxMiddleRight{width:21px; background:url(../images/controls.png) right top repeat-y;}
+    #cboxTopCenter{height:21px; background:url(../images/border.png) 0 0 repeat-x;}
+    #cboxBottomCenter{height:21px; background:url(../images/border.png) 0 -29px repeat-x;}
+    #cboxContent{background:#fff; overflow:hidden;}
+        .cboxIframe{background:#fff;}
+        #cboxError{padding:50px; border:1px solid #ccc;}
+        #cboxLoadedContent{margin-bottom:28px;}
+        #cboxTitle{position:absolute; bottom:4px; left:0; text-align:center; width:100%; color:#949494;}
+        #cboxCurrent{position:absolute; bottom:4px; left:58px; color:#949494;}
+        #cboxSlideshow{position:absolute; bottom:4px; right:30px; color:#0092ef;}
+        #cboxPrevious{position:absolute; bottom:0; left:0; background:url(../images/controls.png) no-repeat -75px 0; width:25px; height:25px; text-indent:-9999px;}
+        #cboxPrevious:hover{background-position:-75px -25px;}
+        #cboxNext{position:absolute; bottom:0; left:27px; background:url(../images/controls.png) no-repeat -50px 0; width:25px; height:25px; text-indent:-9999px;}
+        #cboxNext:hover{background-position:-50px -25px;}
+        #cboxLoadingOverlay{background:url(../images/loading_background.png) no-repeat center center;}
+        #cboxLoadingGraphic{background:url(../images/loading.gif) no-repeat center center;}
+        #cboxClose{position:absolute; bottom:0; right:0; background:url(../images/controls.png) no-repeat -25px 0; width:25px; height:25px; text-indent:-9999px;}
+        #cboxClose:hover{background-position:-25px -25px;}
+
+/*
+  The following fixes a problem where IE7 and IE8 replace a PNG's alpha transparency with a black fill
+  when an alpha filter (opacity change) is set on the element or ancestor element.  This style is not applied to or needed in IE9.
+  See: http://jacklmoore.com/notes/ie-transparency-problems/
+*/
+.cboxIE #cboxTopLeft,
+.cboxIE #cboxTopCenter,
+.cboxIE #cboxTopRight,
+.cboxIE #cboxBottomLeft,
+.cboxIE #cboxBottomCenter,
+.cboxIE #cboxBottomRight,
+.cboxIE #cboxMiddleLeft,
+.cboxIE #cboxMiddleRight {filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF);
+}
+/*end of colorbox.css*/
+
+/* Tiny Scrollbar */
+.TinyScroll .viewport { width: 95%; height: 100%; overflow: hidden; position: relative; }
+.TinyScroll .overview { list-style: none; position: absolute; left: 0; top: 0; padding: 0; margin: 0; }
+.TinyScroll .scrollbar{  position: relative; background-position: 0 0; float: right; width: 5px; }
+.TinyScroll .track { height: 100%; width:8px; position: relative; padding: 0 1px; }
+.TinyScroll .thumb { background-color:#FF8040; height: 80px; width: 8px; cursor: pointer; overflow: hidden; position: absolute; top: 0; left: -5px; }
+.TinyScroll .thumb .end {background-color:#FF8040; overflow: hidden; height: 50px; width: 25px; }
+.TinyScroll .disable { display: none; }
+.noSelect { user-select: none; -o-user-select: none; -moz-user-select: none; -khtml-user-select: none; -webkit-user-select: none; }
+
+/*jquery UI*/
+.ui-helper-hidden{display:none}.ui-helper-hidden-accessible{position:absolute!important;clip:rect(1px);clip:rect(1px,1px,1px,1px)}.ui-helper-reset{margin:0;padding:0;border:0;outline:0;line-height:1.3;text-decoration:none;font-size:100%;list-style:none}.ui-helper-clearfix:before,.ui-helper-clearfix:after{content:"";display:table}.ui-helper-clearfix:after{clear:both}.ui-helper-clearfix{zoom:1}.ui-helper-zfix{width:100%;height:100%;top:0;left:0;position:absolute;opacity:0;filter:Alpha(Opacity=0)}.ui-state-disabled{cursor:default!important}.ui-icon{display:block;text-indent:-99999px;overflow:hidden;background-repeat:no-repeat}.ui-widget-overlay{position:absolute;top:0;left:0;width:100%;height:100%}.ui-autocomplete{position:absolute;top:0;cursor:default}* html .ui-autocomplete{width:1px}.ui-menu{list-style:none;padding:2px;margin:0;display:block;outline:none}.ui-menu .ui-menu{margin-top:-3px;position:absolute}.ui-menu .ui-menu-item{margin:0;padding:0;zoom:1;width:100%}.ui-menu .ui-menu-divider{margin:5px -2px 5px -2px;height:0;font-size:0;line-height:0;border-width:1px 0 0 0}.ui-menu .ui-menu-item a{text-decoration:none;display:block;padding:2px .4em;line-height:1.5;zoom:1;font-weight:normal}.ui-menu .ui-menu-item a.ui-state-focus,.ui-menu .ui-menu-item a.ui-state-active{font-weight:normal;margin:-1px}.ui-menu .ui-state-disabled{font-weight:normal;margin:.4em 0 .2em;line-height:1.5}.ui-menu .ui-state-disabled a{cursor:default}.ui-menu-icons{position:relative}.ui-menu-icons .ui-menu-item a{position:relative;padding-left:2em}.ui-menu .ui-icon{position:absolute;top:.2em;left:.2em}.ui-menu .ui-menu-icon{position:static;float:right}.ui-widget{font-family:Trebuchet MS,Tahoma,Verdana,Arial,sans-serif;font-size:1.1em}.ui-widget .ui-widget{font-size:1em}.ui-widget input,.ui-widget select,.ui-widget textarea,.ui-widget button{font-family:Trebuchet MS,Tahoma,Verdana,Arial,sans-serif;font-size:1em}.ui-widget-content{border:1px solid #ddd;background:#eee url(images/ui-bg_highlight-soft_100_eeeeee_1x100.png) 50% top repeat-x;color:#333}.ui-widget-content a{color:#333}.ui-widget-header{border:1px solid #e78f08;background:#f6a828 url(images/ui-bg_gloss-wave_35_f6a828_500x100.png) 50% 50% repeat-x;color:#fff;font-weight:bold}.ui-widget-header a{color:#fff}.ui-state-default,.ui-widget-content .ui-state-default,.ui-widget-header .ui-state-default{border:1px solid #ccc;background:#f6f6f6 url(images/ui-bg_glass_100_f6f6f6_1x400.png) 50% 50% repeat-x;font-weight:bold;color:#1c94c4}.ui-state-default a,.ui-state-default a:link,.ui-state-default a:visited{color:#1c94c4;text-decoration:none}.ui-state-hover,.ui-widget-content .ui-state-hover,.ui-widget-header .ui-state-hover,.ui-state-focus,.ui-widget-content .ui-state-focus,.ui-widget-header .ui-state-focus{border:1px solid #fbcb09;background:#fdf5ce url(images/ui-bg_glass_100_fdf5ce_1x400.png) 50% 50% repeat-x;font-weight:bold;color:#c77405}.ui-state-hover a,.ui-state-hover a:hover,.ui-state-hover a:link,.ui-state-hover a:visited{color:#c77405;text-decoration:none}.ui-state-active,.ui-widget-content .ui-state-active,.ui-widget-header .ui-state-active{border:1px solid #fbd850;background:#fff url(images/ui-bg_glass_65_ffffff_1x400.png) 50% 50% repeat-x;font-weight:bold;color:#eb8f00}.ui-state-active a,.ui-state-active a:link,.ui-state-active a:visited{color:#eb8f00;text-decoration:none}.ui-state-highlight,.ui-widget-content .ui-state-highlight,.ui-widget-header .ui-state-highlight{border:1px solid #fed22f;background:#ffe45c url(images/ui-bg_highlight-soft_75_ffe45c_1x100.png) 50% top repeat-x;color:#363636}.ui-state-highlight a,.ui-widget-content .ui-state-highlight a,.ui-widget-header .ui-state-highlight a{color:#363636}.ui-state-error,.ui-widget-content .ui-state-error,.ui-widget-header .ui-state-error{border:1px solid #cd0a0a;background:#b81900 url(images/ui-bg_diagonals-thick_18_b81900_40x40.png) 50% 50% repeat;color:#fff}.ui-state-error a,.ui-widget-content .ui-state-error a,.ui-widget-header .ui-state-error a{color:#fff}.ui-state-error-text,.ui-widget-content .ui-state-error-text,.ui-widget-header .ui-state-error-text{color:#fff}.ui-priority-primary,.ui-widget-content .ui-priority-primary,.ui-widget-header .ui-priority-primary{font-weight:bold}.ui-priority-secondary,.ui-widget-content .ui-priority-secondary,.ui-widget-header .ui-priority-secondary{opacity:.7;filter:Alpha(Opacity=70);font-weight:normal}.ui-state-disabled,.ui-widget-content .ui-state-disabled,.ui-widget-header .ui-state-disabled{opacity:.35;filter:Alpha(Opacity=35);background-image:none}.ui-state-disabled .ui-icon{filter:Alpha(Opacity=35)}.ui-icon{width:16px;height:16px;background-image:url(images/ui-icons_222222_256x240.png)}.ui-widget-content .ui-icon{background-image:url(images/ui-icons_222222_256x240.png)}.ui-widget-header .ui-icon{background-image:url(images/ui-icons_ffffff_256x240.png)}.ui-state-default .ui-icon{background-image:url(images/ui-icons_ef8c08_256x240.png)}.ui-state-hover .ui-icon,.ui-state-focus .ui-icon{background-image:url(images/ui-icons_ef8c08_256x240.png)}.ui-state-active .ui-icon{background-image:url(images/ui-icons_ef8c08_256x240.png)}.ui-state-highlight .ui-icon{background-image:url(images/ui-icons_228ef1_256x240.png)}.ui-state-error .ui-icon,.ui-state-error-text .ui-icon{background-image:url(images/ui-icons_ffd27a_256x240.png)}.ui-icon-carat-1-n{background-position:0 0}.ui-icon-carat-1-ne{background-position:-16px 0}.ui-icon-carat-1-e{background-position:-32px 0}.ui-icon-carat-1-se{background-position:-48px 0}.ui-icon-carat-1-s{background-position:-64px 0}.ui-icon-carat-1-sw{background-position:-80px 0}.ui-icon-carat-1-w{background-position:-96px 0}.ui-icon-carat-1-nw{background-position:-112px 0}.ui-icon-carat-2-n-s{background-position:-128px 0}.ui-icon-carat-2-e-w{background-position:-144px 0}.ui-icon-triangle-1-n{background-position:0 -16px}.ui-icon-triangle-1-ne{background-position:-16px -16px}.ui-icon-triangle-1-e{background-position:-32px -16px}.ui-icon-triangle-1-se{background-position:-48px -16px}.ui-icon-triangle-1-s{background-position:-64px -16px}.ui-icon-triangle-1-sw{background-position:-80px -16px}.ui-icon-triangle-1-w{background-position:-96px -16px}.ui-icon-triangle-1-nw{background-position:-112px -16px}.ui-icon-triangle-2-n-s{background-position:-128px -16px}.ui-icon-triangle-2-e-w{background-position:-144px -16px}.ui-icon-arrow-1-n{background-position:0 -32px}.ui-icon-arrow-1-ne{background-position:-16px -32px}.ui-icon-arrow-1-e{background-position:-32px -32px}.ui-icon-arrow-1-se{background-position:-48px -32px}.ui-icon-arrow-1-s{background-position:-64px -32px}.ui-icon-arrow-1-sw{background-position:-80px -32px}.ui-icon-arrow-1-w{background-position:-96px -32px}.ui-icon-arrow-1-nw{background-position:-112px -32px}.ui-icon-arrow-2-n-s{background-position:-128px -32px}.ui-icon-arrow-2-ne-sw{background-position:-144px -32px}.ui-icon-arrow-2-e-w{background-position:-160px -32px}.ui-icon-arrow-2-se-nw{background-position:-176px -32px}.ui-icon-arrowstop-1-n{background-position:-192px -32px}.ui-icon-arrowstop-1-e{background-position:-208px -32px}.ui-icon-arrowstop-1-s{background-position:-224px -32px}.ui-icon-arrowstop-1-w{background-position:-240px -32px}.ui-icon-arrowthick-1-n{background-position:0 -48px}.ui-icon-arrowthick-1-ne{background-position:-16px -48px}.ui-icon-arrowthick-1-e{background-position:-32px -48px}.ui-icon-arrowthick-1-se{background-position:-48px -48px}.ui-icon-arrowthick-1-s{background-position:-64px -48px}.ui-icon-arrowthick-1-sw{background-position:-80px -48px}.ui-icon-arrowthick-1-w{background-position:-96px -48px}.ui-icon-arrowthick-1-nw{background-position:-112px -48px}.ui-icon-arrowthick-2-n-s{background-position:-128px -48px}.ui-icon-arrowthick-2-ne-sw{background-position:-144px -48px}.ui-icon-arrowthick-2-e-w{background-position:-160px -48px}.ui-icon-arrowthick-2-se-nw{background-position:-176px -48px}.ui-icon-arrowthickstop-1-n{background-position:-192px -48px}.ui-icon-arrowthickstop-1-e{background-position:-208px -48px}.ui-icon-arrowthickstop-1-s{background-position:-224px -48px}.ui-icon-arrowthickstop-1-w{background-position:-240px -48px}.ui-icon-arrowreturnthick-1-w{background-position:0 -64px}.ui-icon-arrowreturnthick-1-n{background-position:-16px -64px}.ui-icon-arrowreturnthick-1-e{background-position:-32px -64px}.ui-icon-arrowreturnthick-1-s{background-position:-48px -64px}.ui-icon-arrowreturn-1-w{background-position:-64px -64px}.ui-icon-arrowreturn-1-n{background-position:-80px -64px}.ui-icon-arrowreturn-1-e{background-position:-96px -64px}.ui-icon-arrowreturn-1-s{background-position:-112px -64px}.ui-icon-arrowrefresh-1-w{background-position:-128px -64px}.ui-icon-arrowrefresh-1-n{background-position:-144px -64px}.ui-icon-arrowrefresh-1-e{background-position:-160px -64px}.ui-icon-arrowrefresh-1-s{background-position:-176px -64px}.ui-icon-arrow-4{background-position:0 -80px}.ui-icon-arrow-4-diag{background-position:-16px -80px}.ui-icon-extlink{background-position:-32px -80px}.ui-icon-newwin{background-position:-48px -80px}.ui-icon-refresh{background-position:-64px -80px}.ui-icon-shuffle{background-position:-80px -80px}.ui-icon-transfer-e-w{background-position:-96px -80px}.ui-icon-transferthick-e-w{background-position:-112px -80px}.ui-icon-folder-collapsed{background-position:0 -96px}.ui-icon-folder-open{background-position:-16px -96px}.ui-icon-document{background-position:-32px -96px}.ui-icon-document-b{background-position:-48px -96px}.ui-icon-note{background-position:-64px -96px}.ui-icon-mail-closed{background-position:-80px -96px}.ui-icon-mail-open{background-position:-96px -96px}.ui-icon-suitcase{background-position:-112px -96px}.ui-icon-comment{background-position:-128px -96px}.ui-icon-person{background-position:-144px -96px}.ui-icon-print{background-position:-160px -96px}.ui-icon-trash{background-position:-176px -96px}.ui-icon-locked{background-position:-192px -96px}.ui-icon-unlocked{background-position:-208px -96px}.ui-icon-bookmark{background-position:-224px -96px}.ui-icon-tag{background-position:-240px -96px}.ui-icon-home{background-position:0 -112px}.ui-icon-flag{background-position:-16px -112px}.ui-icon-calendar{background-position:-32px -112px}.ui-icon-cart{background-position:-48px -112px}.ui-icon-pencil{background-position:-64px -112px}.ui-icon-clock{background-position:-80px -112px}.ui-icon-disk{background-position:-96px -112px}.ui-icon-calculator{background-position:-112px -112px}.ui-icon-zoomin{background-position:-128px -112px}.ui-icon-zoomout{background-position:-144px -112px}.ui-icon-search{background-position:-160px -112px}.ui-icon-wrench{background-position:-176px -112px}.ui-icon-gear{background-position:-192px -112px}.ui-icon-heart{background-position:-208px -112px}.ui-icon-star{background-position:-224px -112px}.ui-icon-link{background-position:-240px -112px}.ui-icon-cancel{background-position:0 -128px}.ui-icon-plus{background-position:-16px -128px}.ui-icon-plusthick{background-position:-32px -128px}.ui-icon-minus{background-position:-48px -128px}.ui-icon-minusthick{background-position:-64px -128px}.ui-icon-close{background-position:-80px -128px}.ui-icon-closethick{background-position:-96px -128px}.ui-icon-key{background-position:-112px -128px}.ui-icon-lightbulb{background-position:-128px -128px}.ui-icon-scissors{background-position:-144px -128px}.ui-icon-clipboard{background-position:-160px -128px}.ui-icon-copy{background-position:-176px -128px}.ui-icon-contact{background-position:-192px -128px}.ui-icon-image{background-position:-208px -128px}.ui-icon-video{background-position:-224px -128px}.ui-icon-script{background-position:-240px -128px}.ui-icon-alert{background-position:0 -144px}.ui-icon-info{background-position:-16px -144px}.ui-icon-notice{background-position:-32px -144px}.ui-icon-help{background-position:-48px -144px}.ui-icon-check{background-position:-64px -144px}.ui-icon-bullet{background-position:-80px -144px}.ui-icon-radio-on{background-position:-96px -144px}.ui-icon-radio-off{background-position:-112px -144px}.ui-icon-pin-w{background-position:-128px -144px}.ui-icon-pin-s{background-position:-144px -144px}.ui-icon-play{background-position:0 -160px}.ui-icon-pause{background-position:-16px -160px}.ui-icon-seek-next{background-position:-32px -160px}.ui-icon-seek-prev{background-position:-48px -160px}.ui-icon-seek-end{background-position:-64px -160px}.ui-icon-seek-start{background-position:-80px -160px}.ui-icon-seek-first{background-position:-80px -160px}.ui-icon-stop{background-position:-96px -160px}.ui-icon-eject{background-position:-112px -160px}.ui-icon-volume-off{background-position:-128px -160px}.ui-icon-volume-on{background-position:-144px -160px}.ui-icon-power{background-position:0 -176px}.ui-icon-signal-diag{background-position:-16px -176px}.ui-icon-signal{background-position:-32px -176px}.ui-icon-battery-0{background-position:-48px -176px}.ui-icon-battery-1{background-position:-64px -176px}.ui-icon-battery-2{background-position:-80px -176px}.ui-icon-battery-3{background-position:-96px -176px}.ui-icon-circle-plus{background-position:0 -192px}.ui-icon-circle-minus{background-position:-16px -192px}.ui-icon-circle-close{background-position:-32px -192px}.ui-icon-circle-triangle-e{background-position:-48px -192px}.ui-icon-circle-triangle-s{background-position:-64px -192px}.ui-icon-circle-triangle-w{background-position:-80px -192px}.ui-icon-circle-triangle-n{background-position:-96px -192px}.ui-icon-circle-arrow-e{background-position:-112px -192px}.ui-icon-circle-arrow-s{background-position:-128px -192px}.ui-icon-circle-arrow-w{background-position:-144px -192px}.ui-icon-circle-arrow-n{background-position:-160px -192px}.ui-icon-circle-zoomin{background-position:-176px -192px}.ui-icon-circle-zoomout{background-position:-192px -192px}.ui-icon-circle-check{background-position:-208px -192px}.ui-icon-circlesmall-plus{background-position:0 -208px}.ui-icon-circlesmall-minus{background-position:-16px -208px}.ui-icon-circlesmall-close{background-position:-32px -208px}.ui-icon-squaresmall-plus{background-position:-48px -208px}.ui-icon-squaresmall-minus{background-position:-64px -208px}.ui-icon-squaresmall-close{background-position:-80px -208px}.ui-icon-grip-dotted-vertical{background-position:0 -224px}.ui-icon-grip-dotted-horizontal{background-position:-16px -224px}.ui-icon-grip-solid-vertical{background-position:-32px -224px}.ui-icon-grip-solid-horizontal{background-position:-48px -224px}.ui-icon-gripsmall-diagonal-se{background-position:-64px -224px}.ui-icon-grip-diagonal-se{background-position:-80px -224px}.ui-corner-all,.ui-corner-top,.ui-corner-left,.ui-corner-tl{-moz-border-radius-topleft:4px;-webkit-border-top-left-radius:4px;-khtml-border-top-left-radius:4px;border-top-left-radius:4px}.ui-corner-all,.ui-corner-top,.ui-corner-right,.ui-corner-tr{-moz-border-radius-topright:4px;-webkit-border-top-right-radius:4px;-khtml-border-top-right-radius:4px;border-top-right-radius:4px}.ui-corner-all,.ui-corner-bottom,.ui-corner-left,.ui-corner-bl{-moz-border-radius-bottomleft:4px;-webkit-border-bottom-left-radius:4px;-khtml-border-bottom-left-radius:4px;border-bottom-left-radius:4px}.ui-corner-all,.ui-corner-bottom,.ui-corner-right,.ui-corner-br{-moz-border-radius-bottomright:4px;-webkit-border-bottom-right-radius:4px;-khtml-border-bottom-right-radius:4px;border-bottom-right-radius:4px}.ui-widget-overlay{background:#666 url(images/ui-bg_diagonals-thick_20_666666_40x40.png) 50% 50% repeat;opacity:.5;filter:Alpha(Opacity=50)}.ui-widget-shadow{margin:-5px 0 0 -5px;padding:5px;background:#000 url(images/ui-bg_flat_10_000000_40x100.png) 50% 50% repeat-x;opacity:.2;filter:Alpha(Opacity=20);-moz-border-radius:5px;-khtml-border-radius:5px;-webkit-border-radius:5px;border-radius:5px}
+
+
+
+
+
+

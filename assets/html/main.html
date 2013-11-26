@@ -1,0 +1,385 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>火柴盒</title>
+<link href="style/style.css" rel="stylesheet" />
+<script type="text/javascript" src="jslib/jslib.merge.min.js"></script>
+<script type="text/javascript" src="jshelper/lang.js"></script>
+<script type="text/javascript" src="jshelper/common.js"></script>
+<script type="text/javascript" src="jshelper/page-initilizer.js"></script>
+<script type="text/javascript" src="jshelper/sys-helper.js"></script>
+<script type="text/javascript" src="jshelper/sms-helper.js"></script>
+<script type="text/javascript" src="jshelper/sms-chat-helper.js"></script>
+<script type="text/javascript" src="jshelper/contact-helper.js"></script>
+<script type="text/javascript" src="jshelper/calllog-helper.js"></script>
+<script type="text/javascript" src="jshelper/photo-helper.js"></script>
+<script type="text/javascript" src="jshelper/file-upload-helper.js"></script>
+<script type="text/javascript" src="jshelper/storage-helper.js"></script>
+<script type="text/javascript" src="jshelper/app-helper.js"></script>
+<script type="text/javascript" src="galleria/galleria-1.2.6.min.js"></script>
+</head>
+<body>
+<div id="frame-div">
+  <div id="head-div">
+    <ul id="Main-Menu" class="main-menu button-transition">
+      <li><a href="#" ><em class="aHasBk sprite sprite-app-menu"></em>短信</a></li>
+      <li><a href="#" class="current"><em class="aHasBk sprite sprite-app-menu"></em>文件</a></li>
+    </ul>
+    <div class="clear"></div>
+	<div class="EnableDebug"><a href="#" id="ENABLE-LOG-BTN" onclick="OnStartog();"	class="sub-menu-button  button-transition">日志</a></div>
+  </div>
+  <!--//head-div结束-->
+  <div id="main-div">
+    <div id="sys-info-div" class="content-div">
+      <div class="sys-item">
+        <div>Battery</div>
+        <div class="sys-graph" id="BatteryInfo" ></div>
+        <div>Battery 50% left</div>
+      </div>
+      <div class="sys-item">
+        <div>RAMInfo</div>
+        <div class="sys-graph" id="RAMInfo" ></div>
+        <div><span class="sys-title">Ram total:</span>23M <span class="sys-title">available Ram:</span> 123M</div>
+      </div>
+      <div class="sys-item">
+        <div>SdCardInfo</div>
+        <div class="sys-graph" id="SdCardInfo" ></div>
+        <div>SDCARD 1G total 345M available 345M available</div>
+      </div>
+      <div class="sys-item">
+        <div class="sys-text-item">
+          <p><span class="sys-title">CPU Model:</span>arm strong</p>
+          <p><span class="sys-title">Freq:</span>569mhz</p>
+        </div>
+      </div>
+      <div class="sys-item">
+        <div class="sys-text-item">
+          <p class="title"><span class="sys-title">Model:</span>HTC Legend</p>
+        </div>
+      </div>
+    </div>
+    <div id="sms-thread-div" class="content-div">
+      <div class="sub-menu-area"> <a href="#" id="NEW-SMS-BTN" onclick="OnShowChat(0);"	class="sub-menu-button  button-transition">新信息</a>
+        <div class='divLine'></div>
+      </div>
+      <div id="ThreadListDiv" class="main-box TinyScroll">
+        <dl class="listThread">
+          <dd class="f_left">
+            <p class="title"> <span>张小明</span><em>2012.3.23 17:50</em><a href="#" class="aHasBk sprite sprite-delete" onclick="OnDeleteThread(0);"></a> </p>
+            <p> <a href="#" onclick="alert('clicked')" class="pseudo-SmsContent">aaa</a> </p>
+          </dd>
+        </dl>
+        <div class="clear"></div>
+        <dl class="listThread">
+          <dd class="f_left">
+            <p class="title"> <span>张小明last</span><em>2012.3.23 17:50</em><a href="#" class="aHasBk sprite sprite-delete" onclick="OnDeleteThread(0);"></a> </p>
+            <p> <a href="#" onclick="alert('clicked')" class="pseudo-SmsContent">aaa</a> </p>
+          </dd>
+        </dl>
+        <div class="clear"></div>
+        <!--//listThread(列表循环结束)-->
+      </div>
+      <div class="clear"></div>
+      <div class='divLine'></div>
+      <div class="page" id="pager"></div>
+      <!--//w634结束-->
+      <!--//w258结束-->
+      <div class="clear"></div>
+    </div>
+    <!--//sms-thread-list content-div结束-->
+    <div id="sms-chat-div" class="content-div">
+      <div class="sub-menu-area"> <a href="#" id="BTN-BACK-TO-SMS" class="sub-menu-button  button-transition" onclick="OnBack2SmsThreadPage()">back</a> <a href="#" id="BTN-SEL-CONTACT" class="sub-menu-button  button-transition" onclick="OnSelectContact()">选择联系人</a>
+        <div class='divLine'></div>
+        <h2 id="SmsSubPageName">短信内容</h2>
+      </div>
+      <div id="SMS-RECV-SELECTED-LIST">
+        <label id="CHAT-CONTACT-LABEL">联系人:</label>
+        <div id="SELECTED-CONTACT-AREA" class="selected-contact-area">
+          <div class="contact_card"> Topsun +8613649999999<a href="#" class="aHasBk  sprite sprite-delete"  onclick="OnDeleteSms(0);"></a> </div>
+          <div class="contact_card"> Topsun +8613649999999<a href="#" class="aHasBk  sprite sprite-delete"  onclick="OnDeleteSms(0);"></a> </div>
+          <div class="contact_card"> Topsun +8613649999999<a href="#" class="aHasBk  sprite sprite-delete"  onclick="OnDeleteSms(0);"></a> </div>
+        </div>
+		<div class="clear"></div>
+      </div>
+      <div class="chat-box TinyScroll" id="SMS_CHAT_LIST">
+        <!--循环区-->
+        <!--来信者-->
+        <dl class="chatlist">
+          <dd class="send-content f_right">
+            <p class="t_bottom"> <a href="">readmore...</a> </p>
+          </dd>
+        </dl>
+        <div class="clear"></div>
+        <dl class="chatlist">
+          <dt class="Sender sprite sprite-SenderContact f_left"></dt>
+          <dd class="send-content f_right">
+            <div class="t_top"> <span class="both">张小明</span><em>2012.3.23 17:50</em> <a href="#" onclick="OnDeleteSms(0);" class="aHasBk  sprite sprite-delete" ></a></div>
+            <p class="t_bottom"> 祝福的话语来自电波:生活的美好要努力拼搏 </p>
+          </dd>
+        </dl>
+        <div class="clear"></div>
+        <!--//来信者结束-->
+        <!--回复者开始-->
+        <dl class="chatlist">
+          <dd class="recv-content f_left">
+            <div class="t_top"> <em>2012.3.23 17:50</em><span id="abc"> <img alt="loading" src="img/sms-loading.gif" />sending....</span> <a href="#"	onclick="OnDeleteSms(0);"  class="aHasBk  sprite sprite-delete" ></a> </div>
+            <p class="t_bottom">收到.谢谢哥们,现在在干吗?天气预报说明天天气大晴,去钓鱼么?</p>
+          </dd>
+          <dt class="Receiver sprite sprite-ReceiverContact f_right"></dt>
+        </dl>
+        <div class="clear"></div>
+        <!--//回复者结束-->
+        <!--//dl类循环结束-->
+      </div>
+      <!--//box dd结束-->
+      <div class="SendSmsBox">
+        <textarea id="SmsEditorContent" class="SmsEditor"></textarea>
+        <a href="#" class="sub-menu-button  button-transition" onclick="OnSendSms();" id="SEND-SMS-BTN">发送</a> </div>
+    </div>
+    <!--//sms-chat-list content-div结束-->
+
+  <div id="contact-div" class="content-div">
+    <div class="sub-menu-area"> <a href="#" id="BTN_DELETE_CONTACT" class="sub-menu-button  button-transition" onclick="OnDeleteContact();"> 删除</a> <a href="#" id="BTN_ADD_CONTACT" class="sub-menu-button  button-transition" onclick="OnAddContact();">添加</a>
+      <div class='divLine'></div>
+    </div>
+    <!--
+	       <div class="input-css">
+              <label for="radio2">显示全部联系人</label>
+              <input name="radio_group" id="radio2" type="radio" value="true" class="crirHiddenJS" onclick="alert('all');"/>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;		  
+              <label for="radio3">显示常用联系人</label>
+              <input name="radio_group" id="radio3" type="radio" value="true" class="crirHiddenJS" checked="checked" onclick="alert('keeped');"/>
+           </div>
+		-->
+    <div class="sys-box TinyScroll" id="MAIN_CONTACT_LIST_DIV">
+      <dl class="contactlist">
+        <a href="#" class="aHasBk sprite sprite-contact" onclick="OnShowContactDetail(cID);"></a>
+        <dd>Gerry<1363274></dd>
+        <dd>
+          <input type="checkbox" name="Contact-Item-CB" value="cid" />
+        </dd>
+      </dl>
+      <dl class="contactlist">
+        <a href="#" class="aHasBk sprite sprite-contact" onclick="OnShowContactDetail(cID);"></a>
+        <dd>Gerry<1363274></dd>
+        <dd>
+          <input type="checkbox" name="Contact-Item-CB" value="cid" />
+        </dd>
+      </dl>
+      <dl class="contactlist">
+        <a href="#" class="aHasBk sprite sprite-contact" onclick="OnShowContactDetail(cID);"></a>
+        <dd>Gerry<1363274></dd>
+        <dd>
+          <input type="checkbox" name="Contact-Item-CB" value="cid" />
+        </dd>
+      </dl>
+      <div class="clear"></div>
+    </div>
+    <div class="clear"></div>
+  </div>
+  <div id="call-div" class="content-div">
+    <div class='divLine'></div>
+    <div id="call-list" class="call-box TinyScroll">
+      <table class="call-table">
+        <tr class="call-row">
+          <td class='call-c1 sprite sprite-InCall'></td>
+          <td class='call-c2'>Gerry aaaaaa</td>
+          <td class='call-c3'>13632741778</td>
+          <td class='call-c4'>2008-09-03</td>
+          <td class='call-c5'>1 minutes 24 seconds</td>
+          <td class='call-c6'><a href="#" onclick="OnDeleteCall(0);"  class="aHasBk  sprite sprite-delete" ></a></td>
+        </tr>
+      </table>
+    </div>
+    <div class='divLine'></div>
+    <div class="page" id="pager"> <a href="#">1</a> <a href="#">2</a> <a href="#" class="current">3</a> <a href="#">4</a> </div>
+  </div>
+  <div id="photo-div" class="content-div">
+   <div class='divLine'></div>
+   <div id="galleria">photo</div>
+  </div>
+  <div id="file-div" class="content-div">
+    <div class="sub-menu-area"> <a href="#" id="BTN-UPLOADFILE" class="sub-menu-button  button-transition" onclick="ShowUploadDiv()">上传</a> <a href="#" id="BTN-REFRESH"  class="sub-menu-button  button-transition" onclick="OnRefreshContent()">刷新</a> <a href="#" id="BTN-DELETE"  class="sub-menu-button  button-transition" onclick="OnDeleteFile()">删除文件</a> <a href="#" id="BTN-CREATE"  class="sub-menu-button  button-transition" onclick="OnCreateFile()">新建目录</a> <a href="#" id="BTN-RENAME"  class="sub-menu-button  button-transition" onclick="OnRenameFile()">Re name</a>
+      <div class='divLine'></div>
+    </div>
+    <div class="FolderPathArea" id="FolderPath"></div>
+    <div class='divLine'></div>
+    <div class="file-box TinyScroll" id="FileList">
+      <dl class="filelist">
+        <dt> <a href="#"><img src="img/photo.png" alt="phone" /></a> </dt>
+        <dd>相片</dd>
+        <dd>
+          <input type="checkbox" name="FileCB" value="相片" />
+        </dd>
+      </dl>
+      <dl class="filelist">
+        <dt> <img src="img/doc.png"  alt="phone" /> </dt>
+        <a href="#">
+        <dd>资料</dd>
+        </a>
+        <dd>
+          <input type="checkbox" name="FileCB" checked="checked" value="资料" />
+        </dd>
+      </dl>
+      <dl class="filelist">
+        <a href="#"> < <img src="img/folder.png"  alt="phone" /> </a>
+        <dd>目录</dd>
+        <dd>
+          <input type="checkbox" name="FileCB" value="目录" />
+        </dd>
+      </dl>
+      <div class="clear"></div>
+    </div>
+    <div class='divLine'></div>
+  </div>
+  <!--//file-explorer content-div结束-->
+  <div id="app-div" class="content-div">
+    <div class="sub-menu-area"> <a href="#" id="BTN-REFRESH-APP"  class="sub-menu-button  button-transition" onclick="OnRefreshApp()">刷新</a>
+      <div class='divLine'></div>
+    </div>
+    <div id="app-list" class="sys-box TinyScroll">
+      <dl class="filelist">
+        <dt> <img src="img/app1.png" width="48px" height="48px" title="v1.0" alt="no" /> </dt>
+        <dd>PocketExport v1.0</dd>
+        <dd> <a href="#" onclick="OnClickRemvoeApp(0);" class="aHasBk  sprite sprite-delete" ></a> </dd>
+      </dl>
+      <div class="clear"></div>
+    </div>
+    <div class='divLine'></div>
+  </div>
+  <div id="option-div" class="content-div">
+    <div class="sub-menu-area"> <a href="#" id="BTN-REFRESH-APP"  class="sub-menu-button  button-transition" onclick="OnRefreshApp()">保存</a>
+      <div class='divLine'></div>
+    </div>
+  </div>
+</div>
+<!--main-div结束-->
+<!--tail-div结束-->
+<div class="clear"></div>
+<div style="display: none;">
+  <div id="AlertContent"></div>
+</div>
+<div style="display: none;">
+  <div id="CONTACTS-SEL-DLG">
+    <div class="contact-input-div"> <span class="contact-title" id="INPUT-CONTACT-NO">请输入联系人号码：</span>
+      <input class="contact-input" id="SMS-RECV-LIST" type="textarea" />
+      <a href="#" id="BTN_CONTACT_INPUT_ENTER" onclick="OnInputPhoneNo();">OK</a> </div>
+    <div class="contacts-list">
+      <label class="contact-title">联系人列表</label>
+      <div id="CONTACTS_LIST" class="contact-sel-box  TinyScroll">
+        <dl class="contact_item">
+          <dt><a href="#" onclick="OnAddContact2SelList(0);"><img src="img/select-contact.png"/></a><span class="pContactItem4Sms">Topsun +8613649999999</span></dt>
+        </dl>
+        <dl class="contact_item">
+          <dt><a href="#" onclick="OnAddContact2SelList(0);"><img src="img/select-contact.png"/></a><span class="pContactItem4Sms">Abc +8613649999999</span></dt>
+        </dl>
+        <!--//p循环结束-->
+      </div>
+    </div>
+    <div class="contacts-list selected-contact-list">
+      <label class="contact-title">已选择联系人列表</label>
+      <div id="SELECTED_CONTACT_LIST" class="contact-sel-box  TinyScroll">
+        <dl class="contact_item">
+          <dt class="pesudo-contact_item"><a href="#" onclick="OnRemoveContactFromSelList(0);"><img src="img/remove-contact.png"/></a>Topsun +8613649999999</dt>
+        </dl>
+        <dl class="contact_item">
+          <dt class="pesudo-contact_item"><a href="#" onclick="OnRemoveContactFromSelList(0);"><img src="img/remove-contact.png"/></a>Gerry +8613649999999</dt>
+        </dl>
+      </div>
+    </div>
+    <div class="sub-menu-area"> <a href="#" id="BTN_SELECT_CONTACT" class="sub-menu-button button-transition" onclick="OnSelectContactDone();">OK</a> </div>
+  </div>
+</div>
+<div style="display: none;">
+  <div id="CREATE-FILE-DIV">
+    <p id="TIPS-FOLDER-NAME">Folder Name</p>
+    <input type="text" id="CREATE-FOLDER-NAME" />
+    <a href="#"	id="CREATE-FOLDER-NOW-BTN" onclick="createFileNow()" class="g-button">Create</a> </div>
+</div>
+<div style="display: none;">
+  <div id="RENAME-FILE-DIV">
+    <p id="TIPS-RE-NAME">Folder Name</p>
+    <input type="text" id="RENAME-FOLDER-NAME" />
+    <p id="TIPS-RE-NAME-NEW">New Folder Name</p>
+    <input type="text" id="RENAME-FOLDER-NAME-NEW" />
+    <br/>
+    <p> <a href="#" id="RENAME-FOLDER-NOW-BTN" onclick="ReNameNow()"
+					class="g-button ">ReName</a> </p>
+  </div>
+</div>
+<div style="display: none;">
+  <div id="UPLOAD-FILE-DIV" style="color: black;">
+    <input type="file" id="file2Upload" onchange="OnFileSelected();" />
+    <div id="UP-DROP-AREA">drag and drop file here<br/>
+    </div>
+    <p id="UPLOAD_INFO" style="height: 30px; color: red;"></p>
+    <a href="#" id="UPLOADFILE" onclick="uploadFile()" class="g-button">上传</a> </div>
+</div>
+<div style="display: none;">
+  <div id="ABOUT-DIV"> <img src="img/logo.png"/>
+    <div id="ABOUT-APP-NAME">MatchBox</div>
+    <div>Mobitnt.com 2012</div>
+  </div>
+</div>
+
+<div style="display: none;">
+  <div id="CONTACT-DETAIL-DIV" class="sign-in">
+    <div class="contact-item-box">
+      <h3 id="CD-NAME-LABEL"> Name:
+        <input id="CD-NAME-VAL" type="text" value="gerry" />
+      </h3>
+    </div>
+    <div class="contact-item-box">
+      <h3 id="CD-PHONE-LABEL"> Phone<a href="#" onclick="OnAddContactItem('phone');" class="aHasBk  sprite sprite-add-item"></a> </h3>
+      <div id="CD-PHONE-LIST">
+        <p>
+          <select>
+            <option value="home">Home</option>
+            <option value="offic" selected="selected">Office</option>
+          </select>
+          <input class="p-CD-PHONE-NO" type="text" value="18666293646" />
+          <a href="#"  class="aHasBk sprite sprite-delete-item" onclick="OnRemoveContactItem('phone');"></a> </p>
+        <p>
+          <select>
+            <option value="home">Home</option>
+            <option value="offic" selected="selected">Office</option>
+          </select>
+          <input class="p-CD-PHONE-NO" type="text" value="18666293646" />
+          <a href="#"  class="aHasBk sprite sprite-delete-item" onclick="OnRemoveContactItem('phone');"></a> </p>
+      </div>
+    </div>
+    <div class="contact-item-box">
+      <h3 id="CD-EMAIL-LABEL"> EMail<a href="#" onclick="OnAddContactItem('phone');" class="aHasBk  sprite sprite-add-item"></a> </h3>
+      <div id="CD-EMAIL-LIST">
+        <p>
+          <select>
+            <option value="Personal">Personal</option>
+            <option value="work">Work</option>
+          </select>
+          <input class="p-CD-EMAIL-VAL" type="text"	value="gerry@mobitnt.com" />
+          <a href="#"  class="aHasBk sprite sprite-delete-item" onclick="OnRemoveContactItem('phone');"></a> </p>
+      </div>
+    </div>
+    <div class="contact-item-box">
+      <h3 id="CD-ADDR-LABEL"> Address <a href="#" onclick="OnAddContactItem('phone');" class="aHasBk  sprite sprite-add-item"></a>&nbsp; <a href="#"
+						onclick="OnRemoveContactItem('phone');" class="aHasBk sprite sprite-delete-item"></a> </h3>
+      <div id="CD-ADDR-LIST">
+        <p>
+        <h5> Steet
+          <input id="CD-STREET" type="text"/>
+        </h5>
+        <h5> City
+          <input id="CD-CITY" type="text"/>
+        </h5>
+        <h5> Country
+          <input id="CD-COUNTRY" type="text"/>
+        </h5>
+        </p>
+      </div>
+    </div>
+    <br/>
+    <a href="#" id="CD-INSERT-CONTACT-BTN" class="g-button" onclick="OnClickAddContact();">Add</a> </div>
+</div>
+</body>
+</html>

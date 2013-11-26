@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">火柴盒</string>
+    <string name="sBtnExitCaption">退出</string>
+    <string name="Backup">备份</string>
+    <string name="Restore">恢复</string>
+	<string name="EnableLog">开始记录日志</string>
+	<string name="DisableLog">停止记录日志</string>
+    <string name="QuitApp">退出</string>
+	<string name="Options">选项</string>
+	<string name="StopSrv">停止服务</string>
+	<string name="SendLog">发送日志</string>
+	<string name="EnterMail">请输入电子邮件地址</string>
+	<string name="BugDescription">请描述下出现的问题</string>
+	<string name="BtnOK">确定</string>
+	<string name="BtnCancel">取消</string>
+</resources>

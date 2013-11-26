@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/logentermail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:autoLink="all"
+        android:text="@string/EnterMail" />
+
+    <EditText
+        android:id="@+id/logReplyMail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailAddress" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/btnMailOK"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/BtnOK" />
+
+    <Button
+        android:id="@+id/btnMailCancel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/BtnCancel" />
+
+</LinearLayout>

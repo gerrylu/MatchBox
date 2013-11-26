@@ -1,0 +1,57 @@
+功能上不能大而全，先期小而精，做到易用性第一
+
+
+1.search sms/call log/app/photo name/video name/music name/contact
+2.file manager improve
+3.app improve 安装应用 (support drag and drop)
+4.right click menu support 
+5.new UI
+6.sms improve
+7.call log and sms statics
+8.联系人区分常用联系人和全部联系人，通过首字母快速定位联系人
+9.缓存机制需要改善
+10.可以选择首界面
+
+
+
+
+version 2.2
+1.mms research
+
+
+more:
+展示音乐、视频
+desktop widget
+设置铃声
+短信、通话统计功能
+
+1.3
+a.new UI				
+b.sms improve		发送界面、显示新短信等		
+c.call log cache  		
+d.file manager  	功能改进，实现在主界面拖动上传文件
+e.contact  			联系人区分常用联系人和全部联系人，通过首字母快速定位联系人
+f.app manager		拖动安装app
+g.photo				解决bug
+i.option			可以选择界面显示顺序,备份选项等
+
+
+
+应该根据各个页面的不同场景来显示错误信息
+没有联系人的时候发送短信界面的联系人一直显示正在加载
+从chat返回到thread，显示的不是最后一条短信
+上传对话框关闭后上传过程还在继续，应该终止
+
+
+
+
+
+
+
+
+
+
+
+
+
+
